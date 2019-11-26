@@ -79,7 +79,7 @@ public class TestController {
 	@RequestMapping("/test/log")
 	@ResponseBody
 	public String loggerTest() {
-		LOGGER.trace("22222This is trace log");
+		LOGGER.trace("33333This is trace log");
 		LOGGER.debug("This is debug log");
 		LOGGER.info("This is info log");
 		LOGGER.warn("This is warn log");
