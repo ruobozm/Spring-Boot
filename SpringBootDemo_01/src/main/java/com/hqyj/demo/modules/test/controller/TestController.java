@@ -116,7 +116,11 @@ public class TestController {
 	@RequestMapping("/log")
 	@ResponseBody
 	public String loggerTest() {
+<<<<<<< HEAD
 		LOGGER.trace("This is trace log");
+=======
+		LOGGER.trace("33333This is trace log");
+>>>>>>> b97638e7a7af7892a4ea2a6d0b04e9b26adc8569
 		LOGGER.debug("This is debug log");
 		LOGGER.info("This is info log");
 		LOGGER.warn("This is warn log");
