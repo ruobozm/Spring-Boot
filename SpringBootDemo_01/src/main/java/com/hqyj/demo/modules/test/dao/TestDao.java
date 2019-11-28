@@ -34,8 +34,8 @@ public interface TestDao {
 	 */
 	@Select("select * from m_country where country_id = #{countryId}")
 	@Results(id="countryResult", value={
-			@Result(column="country_id", property="countryId"),
-			@Result(column="country_id",property="cities",
+			@Result(column="country_id", property="countryId"),//country_id做属性
+			@Result(column="country_id",property="cities",//country_id做参数。2次映射，否则country_id为0
 					javaType=List.class,
 					many=@Many(select="com.hqyj.demo.modules.test.dao.TestDao.getCitiesByCountryId"))
 		})
