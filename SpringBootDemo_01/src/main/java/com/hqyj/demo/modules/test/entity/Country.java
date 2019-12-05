@@ -27,10 +27,8 @@ public class Country {
 	private int languageId;
 	private int currencyId;
 	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
-	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date dateModified;
 	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
-	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date dateCreated;
 	
 	private List<City> cities;

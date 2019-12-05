@@ -1,4 +1,4 @@
-package com.hqyj.demo.config;
+package com.hqyj.demo.config.web;
 
 import org.apache.catalina.Context;
 import org.apache.catalina.connector.Connector;
